@@ -18,7 +18,7 @@
                     </a>
                     <ul class="menu d-flex">
                         <li class="menu_item">
-                            <a href="#" class="menu_btn link">
+                            <a href="index.html" class="menu_btn link">
                                 Студия
                             </a>
                         </li>
@@ -35,14 +35,19 @@
                     </ul>
                 </nav>
                 <ul class="menu-contacts d-flex">
-                    <li>
+                    <li class="menu-contacts-items">
                         <a  class="menu-link link header-menu-link" href="mailto:info@devstudio.com">
-                        <svg>
-                            <use href="./img/symbol-defs.svg#icon-envelope"> </use>
+                        <svg class="menu-icon" width="16px" height="11px">
+                            <use href="./img/symbol-defs.svg#icon-envelope" > </use>
                         </svg> info@devstudio.com </a>
                     </li>
-                    <li>
-                        <a class="menu-link link  header-menu-link" href="tel:380961111111">+38 096 111 11 11 </a>
+                    <li class="menu-contacts-items">
+                        <a class="menu-link link  header-menu-link" href="tel:380961111111">
+                            <svg class="menu-icon"  width="10px" height="15px">
+                                <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +68,11 @@
             <h2 class="features-main">Наши преимущества</h2>
             <ul class="d-flex">
                 <li class="feature">
-                    <img class="feature-icon"  src="./img/Group1.png" alt="icon">
+                    <div class="feature-icon-box">
+                        <svg class="feature-icon"  width="70px" height="70px">
+                            <use href="./img/symbol-defs.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature_title">
                         Внимание к деталям
                     </h3>
@@ -72,7 +81,11 @@
                     </p>
                 </li>
                 <li class="feature">
-                    <img class="feature-icon" src="./img/Group2.png" alt="icon">
+                    <div class="feature-icon-box">
+                        <svg class="feature-icon"  width="70px" height="70px">
+                            <use href="./img/symbol-defs.svg#icon-clock"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature_title">
                         Пунктуальность
                     </h3>
@@ -81,7 +94,11 @@
                     </p>
                 </li>
                 <li class="feature">
-                    <img class="feature-icon"  src="./img/Group3.png" alt="icon">
+                    <div class="feature-icon-box">
+                        <svg class="feature-icon"  width="70px" height="70px">
+                            <use href="./img/symbol-defs.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature_title">
                         Планирование
                     </h3>
@@ -90,7 +107,11 @@
                     </p>
                 </li>
                 <li class="feature">
-                    <img class="feature-icon"  src="./img/Group4.png" alt="icon">
+                    <div class="feature-icon-box">
+                        <svg class="feature-icon"  width="70px" height="70px">
+                            <use href="./img/symbol-defs.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
                     <h3 class="feature_title">
                         Современные технологии
                     </h3>
@@ -148,25 +169,33 @@
                     <p class="team-item__position">
                         Product Designer
                     </p>
-                    <ul class="social d-flex justify-content-around">
-                        <li class="social__item">
-                            <a class="social__link social__link_fb" title="facebook" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/instagram.svg" alt="">
+                    <ul class="team-social d-flex">
+                        <li class="team-social-item">
+                            <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/twitter.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/facebook.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="facebook" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_in" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/linkedin.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -179,25 +208,33 @@
                     <p class="team-item__position">
                         Frontend Developer
                     </p>
-                    <ul class="social d-flex justify-content-around">
-                        <li class="social__item">
-                            <a class="social__link social__link_fb" title="facebook" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/instagram.svg" alt="">
+                    <ul class="team-social d-flex">
+                        <li class="team-social-item">
+                            <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/twitter.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/facebook.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="facebook" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_in" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/linkedin.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -210,25 +247,33 @@
                     <p class="team-item__position">
                         Marketing
                     </p>
-                    <ul class="social d-flex justify-content-around">
-                        <li class="social__item">
-                            <a class="social__link social__link_fb" title="facebook" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/instagram.svg" alt="">
+                    <ul class="team-social d-flex">
+                        <li class="team-social-item">
+                            <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/twitter.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/facebook.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="facebook" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_in" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/linkedin.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -241,25 +286,33 @@
                     <p class="team-item__position">
                         UI Designer
                     </p>
-                    <ul class="social d-flex justify-content-around">
-                        <li class="social__item">
-                            <a class="social__link social__link_fb" title="facebook" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/instagram.svg" alt="">
+                    <ul class="team-social d-flex">
+                        <li class="team-social-item">
+                            <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/twitter.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/facebook.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="facebook" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_in" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/linkedin.svg" alt="">
+                        <li class="team-social-item">
+                            <a class="social__link" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
+                                <svg class="social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -274,22 +327,46 @@
             </h2>
             <ul class="d-flex client-list">
                 <li class="client">
-                    <a href="#"><img src="./img/client1.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="44px" height="49px">
+                            <use href="./img/symbol-defs.svg#icon-logo-1"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="client">
-                    <a href="#"><img src="./img/client2.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="40px" height="52px">
+                            <use href="./img/symbol-defs.svg#icon-logo-2"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="client">
-                    <a href="#"><img src="./img/client3.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="41px" height="42px">
+                            <use href="./img/symbol-defs.svg#icon-logo-3"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="client">
-                    <a href="#"><img src="./img/client4.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="80px" height="42px">
+                            <use href="./img/symbol-defs.svg#icon-logo-4"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="client">
-                    <a href="#"><img src="./img/client5.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="59px" height="47px">
+                            <use href="./img/symbol-defs.svg#icon-logo-5"></use>
+                        </svg>
+                    </a>
                 </li>
                 <li class="client">
-                    <a href="#"><img src="./img/client6.png" alt="client"></a>
+                    <a href="#">
+                        <svg class="client-icon"  width="88px" height="45px">
+                            <use href="./img/symbol-defs.svg#icon-logo-6"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -311,29 +388,37 @@
                         +38 096 111 11 11
                     </a>
                 </div>
-                <div class="socials">
-                    <p class="socials-item">
+                <div class="footer-socials">
+                    <p class="footer-title">
                         присоединяйтесь
                     </p>
-                    <ul class="social d-flex justify-content-around">
-                        <li class="social__item">
-                            <a class="social__link social__link_fb" title="facebook" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/instagram.svg" alt="">
+                    <ul class="footer-social d-flex">
+                        <li class="footer-social-item">
+                            <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
+                                <svg class="footer-social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-insta"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/twitter.svg" alt="">
+                        <li class="footer-social-item">
+                            <a class="social__link" title="twitter" href="https://www.twitter.com/" target="_blank" rel="nofollow external">
+                                <svg class="footer-social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_tw" title="twitter" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/facebook.svg" alt="">
+                        <li class="footer-social-item">
+                            <a class="social__link" title="facebook" href="https://www.facebook.com/" target="_blank" rel="nofollow external">
+                                <svg class="footer-social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="social__item">
-                            <a class="social__link social__link_in" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
-                                <img src="./img/linkedin.svg" alt="">
+                        <li class="footer-social-item">
+                            <a class="social__link" title="linkedin" href="https://www.linkedin.com/" target="_blank" rel="nofollow external">
+                                <svg class="footer-social-icon"  width="20px" height="20px">
+                                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
                             </a>
                         </li>
                     </ul>
@@ -345,7 +430,10 @@
                     <form class="sub-form d-flex" action="#">
                         <input type="text" placeholder="E-mail" name="email" required>
                         <button type="submit" class="send_btn">
-                            Подписаться<i class="fa fa-telegram-plane"></i>
+                            Подписаться
+                            <svg class="submit-icon"  width="24px" height="24px">
+                                <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
                         </button>
                     </form> 
                 </div> 
