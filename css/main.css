@@ -297,6 +297,7 @@ button, button:hover, button:focus, button:active
 }
 .contacts {
     flex-direction: column;
+    width: 231px;
 }
 .logo-footer {
     color: var(--accent-color);
@@ -353,6 +354,9 @@ button, button:hover, button:focus, button:active
     text-transform: uppercase;
     line-height: 16px;
     letter-spacing: 0.03em;
+}
+.subscription {
+    width: 570px;
 }
 .send_btn {
     width: 200px;
