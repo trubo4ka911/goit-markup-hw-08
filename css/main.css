@@ -72,6 +72,9 @@ button, button:hover, button:focus, button:active
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-icon {
     margin-right: 10px;
@@ -87,6 +90,9 @@ button, button:hover, button:focus, button:active
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus {
@@ -135,6 +141,14 @@ button, button:hover, button:focus, button:active
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0.06em;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.offer__btn:hover,
+.offer__btn:focus,
+.offer__btn:active {
+    background-color: rgba(24, 140, 232, 1);
 }
 /* section features */
 .features {
@@ -180,6 +194,7 @@ button, button:hover, button:focus, button:active
     text-align: center;
 }
 .activities-item {
+    position: relative;
     width: 370px;
 }
 .activities-item:not(:last-child) {
@@ -195,7 +210,11 @@ button, button:hover, button:focus, button:active
     letter-spacing: 0.03em;
 }
 .activities-item__title  {
+    position: absolute;
+    width: 370px;
     margin: 0;
+    top: 75%;
+    bottom: 0;
 }
 .activities-item__link {
     display: block;
@@ -255,6 +274,9 @@ button, button:hover, button:focus, button:active
     padding: 12px;
     width: 44px;
     height: 44px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
     fill: currentColor;
@@ -295,6 +317,9 @@ button, button:hover, button:focus, button:active
     text-align: center;
     color: rgba(175, 177, 184, 1);;
     fill: rgba(175, 177, 184, 1);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -346,10 +371,10 @@ button, button:hover, button:focus, button:active
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .footer-social-item {
-
-} */
 .footer-social-item:not(:last-child) {
     margin-right: 10px;
 }
@@ -393,6 +418,14 @@ button, button:hover, button:focus, button:active
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.send_btn:hover,
+.send_btn:focus,
+.send_btn:active {
+    background-color: rgba(24, 140, 232, 1);
 }
 .sub-form input {
     width: 358px;
@@ -445,6 +478,9 @@ button, button:hover, button:focus, button:active
     line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio_btn:focus,
 .portfolio_btn:hover,
@@ -466,6 +502,9 @@ button, button:hover, button:focus, button:active
     margin-right: 30px;
     margin-bottom: 16px;
     border: 1px solid transparent;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .route-list_item:nth-child(3n) {
     margin-right: 0;
@@ -480,9 +519,15 @@ button, button:hover, button:focus, button:active
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .route-list_link {
+    position: relative;
     text-decoration: none;
 }
 .route-list_overlay {
+    position: absolute;
+    opacity: 0;
+    width: 370px;
+    margin: 0;
+    top: 0;
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
     font-size: 18px;
@@ -490,6 +535,12 @@ button, button:hover, button:focus, button:active
     color: var(--accent-color);
     line-height: 28px;
     letter-spacing: 0.03em;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.route-list_overlay {
+    opacity: 1;
 }
 .route-list_title {
     margin: 20px 24px 4px;
