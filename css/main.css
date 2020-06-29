@@ -548,19 +548,13 @@ button, button:hover, button:focus, button:active
 }
 .route-list_wrap::before {
     display: inline-block;
-    content: 'Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.';
+    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--accent-color);
-    line-height: 28px;
-    letter-spacing: 0.03em;
     transition-property: all;
     transform: translateY(100%);
     transition-duration: 250ms;
@@ -574,6 +568,28 @@ button, button:hover, button:focus, button:active
     font-size: 18px;
     font-weight: 700;
     color: var(--title-text-color);
+}
+.route-list_overlay {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--accent-color);
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+    opacity: 0;
+}
+.route-list_overlay:hover,
+.route-list_overlay:active,
+.route-list_overlay:focus {
+    opacity: 1;
 }
 .route-list_type {
     margin: 0 24px 20px;
