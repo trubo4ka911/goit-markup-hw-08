@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header page-header">
         <div class="container">
             <div class="header-menu d-flex">
                 <nav class="navigation d-flex">
@@ -313,5 +313,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        const { height: pageHeaderHeight } = document
+          .querySelector(".page-header")
+          .getBoundingClientRect();
+  
+        document.body.style.paddingTop = `${pageHeaderHeight}px`;
+      </script>
 </body>
 </html>
