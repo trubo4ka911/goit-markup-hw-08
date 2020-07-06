@@ -24,6 +24,9 @@ button, button:hover, button:focus, button:active
  {
   outline: none;
 }
+textarea {
+    resize: none;
+}
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -479,6 +482,45 @@ button, button:hover, button:focus, button:active
     text-align: center;
     letter-spacing: 0.03em;
 }
+/*Form*/
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+}
+.form-field {
+    width: 448px;
+    display: flex;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+/*FORM-FIELD*/
+.form {
+    padding: 40px;
+    width: 528px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+}
+.form-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
 /* PORTFOLIO.HTML */
 .works {
     padding-top: 93px;
@@ -591,4 +633,4 @@ button, button:hover, button:focus, button:active
     color: var(--primary-text-color);
     line-height: 30px;
     letter-spacing: 0.03em;
-} */
+}
