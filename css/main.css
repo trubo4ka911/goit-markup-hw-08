@@ -497,6 +497,10 @@ textarea {
     height: 18px;
     fill: currentColor;
 }
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
 .form-button-close {
     position: absolute;
     display: flex;
@@ -593,6 +597,59 @@ textarea {
     letter-spacing: 0.03em;
 
     color: #212121;
+}
+.form-checkbox,
+.form-button {
+	display: flex;
+	justify-content: center;
+}
+.form-button-disabled {
+	background-color: var(--icon-color);
+	pointer-events: none;
+}
+.form-checkbox-input {
+	margin-right: 7px;
+	padding: 0;
+	opacity: 0;
+}
+.form-checkbox-label {
+	display: inline-block;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.form-checkbox-label:before,
+.form-checkbox-label:after {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 15px;
+	top: 3px;
+	left: -23px;
+
+	transition-property: opacity;
+	transition-duration: var(--animation-duration);
+	transition-timing-function: var(--animation-timing-function);
+}
+.form-checkbox-label:before {
+	background: url(../images/uncheck.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 1;
+}
+.form-checkbox-label:after {
+	background: url(../images/check.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0;
+}
+.form-checkbox-input:checked + .form-checkbox-label:before {
+	opacity: 0;
+}
+.form-checkbox-input:checked + .form-checkbox-label:after {
+	opacity: 1;
+}
+.link-agree {
+	color: var(--accent-color);
 }
 /* PORTFOLIO.HTML */
 .works {

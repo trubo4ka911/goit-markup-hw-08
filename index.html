@@ -46,6 +46,24 @@
                     </span>
                 </label>
                 <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+                <div class="form-checkbox">
+					<input
+						class="form-checkbox-input"
+						id="checkbox-agree"
+						type="checkbox"
+						name="checkbox-agree"
+						checked
+					/>
+					<label class="form-checkbox-label form-relative" for="checkbox-agree">
+						Соглашаюсь с рассылкой и принимаю
+						<a class="link-agree" href="./index.html">Условия договора</a>
+					</label>
+                </div>
+                <div class="form-button">
+					<button type="submit" class="hero-button" id="form-submit">
+						Отправить
+					</button>
+				</div>
         </form>
     </div>
     <header class="header page-header">
@@ -484,6 +502,6 @@
             </div>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
