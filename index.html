@@ -9,36 +9,45 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <form class="form js-speaker-form">
-        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-            <label class="form-field">
-                <input type="text" class="form-input" name="name" placeholder=" ">
-                <span class="form-label">Имя</span>
-                <span class="form-icon">
-                    <svg width="12px" height="12px">
-                        <use href="./img/symbol-defs.svg#icon-user" > </use>
-                    </svg>
-                </span>
-            </label>
-            <label class="form-field">
-                <input type="text" class="form-input" name="name" placeholder=" ">
-                <span class="form-label">Телефон</span>
-                <span class="form-icon">
-                    <svg width="13px" height="13px">
-                        <use href="./img/symbol-defs.svg#icon-phone" > </use>
-                    </svg>
-                </span>
-            </label>
-            <label class="form-field">
-                <input type="text" class="form-input" name="name" placeholder=" ">
-                <span class="form-label">Почта</span>
-                <span class="form-icon">
-                    <svg width="15px" height="12px">
-                        <use href="./img/symbol-defs.svg#icon-user" > </use>
-                    </svg>
-                </span>
-            </label>
-    </form>
+<!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <form class="form js-speaker-form">
+            <button class="form-button-close" type="submit" data-modal-close>
+                <svg class="icon-close">
+                    <use href="./img/symbol-defs.svg#icon-close-black" > </use>
+                </svg>
+            </button>
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="form-field">
+                    <input type="text" class="form-input" name="name" placeholder=" ">
+                    <span class="form-label">Имя</span>
+                    <span class="form-icon">
+                        <svg width="18px">
+                            <use href="./img/symbol-defs.svg#icon-person-black" > </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-field">
+                    <input type="text" class="form-input" name="name" placeholder=" ">
+                    <span class="form-label">Телефон</span>
+                    <span class="form-icon">
+                        <svg width="18px">
+                            <use href="./img/symbol-defs.svg#icon-phone-black" > </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form-field">
+                    <input type="text" class="form-input" name="name" placeholder=" ">
+                    <span class="form-label">Почта</span>
+                    <span class="form-icon">
+                        <svg width="18px">
+                            <use href="./img/symbol-defs.svg#icon-email-black" > </use>
+                        </svg>
+                    </span>
+                </label>
+                <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Комментарий"></textarea>
+        </form>
+    </div>
     <header class="header page-header">
         <div class="container">
             <div class="header-menu d-flex">
@@ -202,7 +211,7 @@
                     <ul class="team-social d-flex">
                         <li class="team-social-item">
                             <a class="social__link" title="instagram" href="https://www.instagram.com/" target="_blank" rel="nofollow external">
-                                <svg class="social-icon"  width="20px" height="20px">
+                                <svg class="social-icon"width="20px" height="20px">
                                     <use href="./img/symbol-defs.svg#icon-insta"></use>
                                 </svg>
                             </a>
