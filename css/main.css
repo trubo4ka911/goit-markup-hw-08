@@ -427,9 +427,6 @@ textarea {
     line-height: 16px;
     letter-spacing: 0.03em;
 }
-.subscription {
-    width: 570px;
-}
 .send_btn {
     width: 200px;
     padding: 10px 29px;
@@ -488,6 +485,7 @@ textarea {
 }
 .comment {
     padding: 12px 16px;
+    margin: 0 0 20px;
     width: 448px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -503,21 +501,25 @@ textarea {
 }
 .backdrop {
     position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    max-width: 100%;
+    height: 581px;
+    max-height: 100%;
+    z-index: 9999;
 
 	transition-property: opacity;
-	transition-duration: var(--animation-duration);
-	transition-timing-function: var(--animation-timing-function);
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
 
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 9999;
 }
 .form-button-close {
     position: absolute;
     display: flex;
+    z-index: 1;
     justify-content: center;
     align-items: center;
     right: 8px;
@@ -532,8 +534,8 @@ textarea {
     border-radius: 50%;
     cursor: pointer;
     transition-property: color;
-    transition-duration: var(--animation-duration);
-    transition-timing-function: var(--animation-timing-function);
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
 }
 .icon-close:hover,
 .icon-close:active {
@@ -541,18 +543,16 @@ textarea {
 }
 .form {
     position: absolute;
-    top: 20%;
-    left: 30%;
-    right: 30%;
-    width: 528px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    overflow: auto;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: var(--accent-color);
     color: var(--primary-text-color);
-
 }
 .form-field {
     position: relative;
@@ -596,8 +596,8 @@ textarea {
     fill: var(--focus-color);
   }
   
-  .form-field:focus-within > .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
+.form-field:focus-within > .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
     transform: translateY(-45px);
     color: var(--focus-color);
   }
@@ -619,10 +619,7 @@ textarea {
 	display: flex;
 	justify-content: center;
 }
-.form-button-disabled {
-	background-color: var(--icon-color);
-	pointer-events: none;
-}
+
 .form-checkbox-input {
 	margin-right: 7px;
 	padding: 0;
@@ -630,8 +627,11 @@ textarea {
 }
 .form-checkbox-label {
 	display: inline-block;
-	margin-bottom: 30px;
-	cursor: pointer;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 .form-checkbox-label:before,
 .form-checkbox-label:after {
@@ -640,11 +640,11 @@ textarea {
 	width: 16px;
 	height: 15px;
 	top: 3px;
-	left: -23px;
+	left: 0;
 
 	transition-property: opacity;
-	transition-duration: var(--animation-duration);
-	transition-timing-function: var(--animation-timing-function);
+	transition-duration: 250ms;;
+	transition-timing-function: var(--timing-function);
 }
 .form-checkbox-label:before {
 	background: url(../img/checkbox.svg);
@@ -665,7 +665,42 @@ textarea {
 	opacity: 1;
 }
 .link-agree {
+	color: var(--focus-color);
+}
+.hero-button {
+	border-radius: 4px;
+	display: inline-block;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 9px;
+	padding-right: 9px;
+	min-width: 200px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	text-align: center;
+	letter-spacing: 0.06em;
+
+	border: 1px solid transparent;
 	color: var(--accent-color);
+	background-color: var(--focus-color);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function: var(--timing-function);
+
+	cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+	background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.form-button-disabled {
+	background-color: #afb1b8;
+	pointer-events: none;
 }
 /* PORTFOLIO.HTML */
 .works {
