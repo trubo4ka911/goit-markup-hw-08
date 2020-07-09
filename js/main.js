@@ -21,16 +21,16 @@
 		new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
 
 		e.currentTarget.reset();
-		if (document.getElementById("subscribe-checkbox-agree").checked) {
-			document.getElementById("subscribe-form-submit").classList.remove("subscribe-form-button-disabled");
+		if (document.getElementById("checkbox-agree").checked) {
+			document.getElementById("form-submit").classList.remove("form-button-disabled");
 		}
 	});
-	document.getElementById("subscribe-checkbox-agree").addEventListener("change", offButtton);
+	document.getElementById("checkbox-agree").addEventListener("change", offButtton);
 	function offButtton() {
-		if (document.getElementById("subscribe-checkbox-agree").checked) {
-			document.getElementById("subscribe-form-submit").classList.remove("subscribe-form-button-disabled");
+		if (document.getElementById("checkbox-agree").checked) {
+			document.getElementById("form-submit").classList.remove("form-button-disabled");
 		} else {
-			document.getElementById("subscribe-form-submit").classList.add("subscribe-form-button-disabled");
+			document.getElementById("form-submit").classList.add("form-button-disabled");
 		}
 	}
 })();
