@@ -458,6 +458,7 @@ textarea {
     width: 358px;
     padding: 18px 12px;
     margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -615,21 +616,26 @@ textarea {
 
     color: #212121;
 }
-.form-checkbox,
-.form-button {
+.form-checkbox {
     position: relative;
 	display: flex;
-	justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .form-checkbox-input {
-	margin-right: 7px;
-	padding: 0;
-	opacity: 0;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
 }
 .form-checkbox-label {
 	display: inline-block;
-    margin-bottom: 30px;
     cursor: pointer;
     font-size: 14px;
     line-height: 24px;
