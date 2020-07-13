@@ -518,6 +518,7 @@ textarea {
 	transition-duration: 250ms;
 	transition-timing-function: var(--timing-function);
     background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
 }
 .form-button-close {
     position: absolute;
@@ -633,6 +634,7 @@ textarea {
     margin-right: 7px;
     width: 16px;
     height: 15px;
+    visibility: hidden;
 }
 .form-checkbox-label {
 	display: inline-block;
@@ -649,7 +651,7 @@ textarea {
 	height: 15px;
 	top: 3px;
 	left: 0;
-
+    margin-left: 12px;
 	transition-property: opacity;
 	transition-duration: 250ms;;
 	transition-timing-function: var(--timing-function);
@@ -661,7 +663,7 @@ textarea {
 	opacity: 1;
 }
 .form-checkbox-label:after {
-	background: url(../img/icon\ check.svg);
+	background: url(../img/check.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	opacity: 0;
