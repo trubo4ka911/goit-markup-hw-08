@@ -1,0 +1,84 @@
+.navigation {
+    align-items: center;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px 0 7px;
+    background-color: #fff;
+    z-index: 9998;
+}
+.header-menu {
+    align-items: center;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $titleTextColor;
+    font-size: 26px;
+    text-decoration: none;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo span {
+    color: $focusColor ;
+}
+.menu {
+    margin-left: 85px;
+}
+.menu_btn {
+    position: relative;
+    margin-right: 49px;
+    color: $titleTextColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $timingFunction;
+}
+.menu_btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -185%;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $focusColor;
+    transform: scaleX(0);
+    transition-duration: $transitionDuration;
+    transition-timing-function: $timingFunction;
+}
+.menu_btn:hover::after {
+    transform: scaleX(1);
+}
+.menu-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.header-menu-link {
+    margin-left: 50px;
+}
+.menu-link {
+    display: flex;
+    align-items: center;
+    color: $primaryTextColor;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $timingFunction;
+}
+.link:hover,
+.link:focus {
+    color: $focusColor;
+}
+.menu-contacts {
+    margin-left: auto;
+}
