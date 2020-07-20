@@ -1,14 +1,13 @@
-@import "./normalize";
-@import "./variables";
-@import "./header";
-@import "./footer";
-@import "./activities";
-@import "./clients";
-@import "./features";
-@import "./modal";
-@import "./offer";
-@import "./team";
-@import "./portfolio";
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/activities";
+@import "./components/clients";
+@import "./components/features";
+@import "./components/modal";
+@import "./components/offer";
+@import "./components/team";
+@import "./components/portfolio";
 body {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;

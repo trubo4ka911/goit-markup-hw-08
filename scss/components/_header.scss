@@ -37,8 +37,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: $transitionDuration;
-    transition-timing-function: $timingFunction;
+    @include transition;
 }
 .menu_btn::after {
     content: '';
@@ -51,8 +50,7 @@
     border-radius: 2px;
     background-color: $focusColor;
     transform: scaleX(0);
-    transition-duration: $transitionDuration;
-    transition-timing-function: $timingFunction;
+    @include transition;
 }
 .menu_btn:hover::after {
     transform: scaleX(1);
@@ -72,8 +70,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: $transitionDuration;
-    transition-timing-function: $timingFunction;
+    @include transition;
 }
 .link:hover,
 .link:focus {

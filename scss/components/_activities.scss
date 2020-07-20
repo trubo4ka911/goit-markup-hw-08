@@ -1,0 +1,41 @@
+.activities {
+    padding: 94px 0;
+    text-align: center;
+}
+.activities-item {
+    position: relative;
+    width: 370px;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+    &-title  {
+        position: absolute;
+        width: 370px;
+        margin: 0;
+        top: 75%;
+        bottom: 0;
+    }
+    &-link {
+        display: block;
+        padding: 27px 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: $accentColor;
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+.activities-title, .team-title, .our-clients-title {
+    margin: 0 0 50px 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: $titleTextColor;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

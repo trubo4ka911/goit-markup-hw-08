@@ -21,7 +21,7 @@
     text-align: center;
     letter-spacing: 0.06em;
 }
-.offer__btn {
+.offer-btn {
     display: block;
     box-sizing: border-box;
     margin: auto;
@@ -38,11 +38,11 @@
     line-height: 30px;
     letter-spacing: 0.06em;
     transition-property: background-color;
-    transition-duration: $transitionDuration;
-    transition-timing-function: $timingFunction;
-}
-.offer__btn:hover,
-.offer__btn:focus,
-.offer__btn:active {
+    @include transition;
+    
+    &:hover,
+    &:focus,
+    &:active {
     background-color: rgba(24, 140, 232, 1);
+    }
 }

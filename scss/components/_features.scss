@@ -1,0 +1,38 @@
+.features {
+    padding: 94px 0 0;
+}
+.feature {
+    width: 270px;
+    
+    &-title {
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: $titleTextColor;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+    }
+    &-text {
+        margin: 10px 0 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: $primaryTextColor;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+}
+.feature:not(:last-child) {
+    margin-right: 30px;
+}
+.feature-icon-box {
+    display: block;
+    padding: 25px 100px;
+    background-color: rgba(245, 244, 250, 1);
+    border-radius: 4px;
+}
+.features-main {
+    display: none;
+    visibility: hidden;
+}

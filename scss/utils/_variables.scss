@@ -5,5 +5,7 @@ $titleTextColor: rgba(33, 33, 33, 1);
 $accentColor: rgba(255, 255, 255, 1);
 $focusColor: rgba(33, 150, 243, 1);
 
-$timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
-$transitionDuration: 250ms;
+@mixin transition( ) {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
