@@ -1,0 +1,39 @@
+body {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: none;
+  }
+button {
+    cursor: pointer;
+}
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+ {
+  outline: none;
+}
+textarea {
+    resize: none;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.d-flex {
+    display: flex;
+}
+.link {
+    text-decoration: none;
+}
+.justify-content-around {
+    justify-content: space-around;
+}
+.wrap {
+    flex-wrap: wrap;
+}
