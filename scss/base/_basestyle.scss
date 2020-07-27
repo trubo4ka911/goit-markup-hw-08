@@ -21,12 +21,15 @@ textarea {
     resize: none;
 }
 .container {
-    width: 1200px;
+    width: $mobile;
     margin: 0 auto;
     padding: 0 15px;
-}
-.d-flex {
-    display: flex;
+    @media screen and (min-width: 768px)  {
+        width: $tablet;
+    }
+    @media screen and (min-width: 1600px)  {
+        width: $desktop;
+    }
 }
 .link {
     text-decoration: none;
@@ -37,3 +40,8 @@ textarea {
 .wrap {
     flex-wrap: wrap;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
