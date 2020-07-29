@@ -3,9 +3,11 @@
     width: 100%;
     top: 0;
     left: 0;
-    padding: 16px 15px;
     background-color: #fff;
     z-index: 9998;
+    @media screen and (min-width: $desktop) {
+        padding: 25px 0 7px;
+    }
 }
 .navigation {
     display: flex;

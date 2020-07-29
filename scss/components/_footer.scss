@@ -1,0 +1,123 @@
+.footer {
+    padding-bottom: 21px;
+    background-color: #2F303A;
+    
+    &-nav {
+        padding-bottom: 28px;
+    }
+}
+.contacts {
+    flex-direction: column;
+    width: 231px;
+}
+.logo-footer {
+    color: $accentColor;
+    margin: 60px 0 20px;
+}
+.address {
+    font-size: 14px;
+    color: $accentColor;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+.footer-menu-link {
+    margin-top: 9px;
+}
+.footer-socials {
+    width: 206px;
+    margin-left: 69px;
+    margin-right: 94px;
+}
+.footer-social {
+    justify-content: center;
+
+    &-icon {
+        fill: currentColor;
+
+        &:hover,
+        &:focus {
+            fill: #FFFFFF;;
+        }
+    }
+    &-link {
+        display: block;
+        color: $accentColor;
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition-property: background-color, color;
+        @include transition;
+
+        &:hover,
+        &:focus {
+            background-color: $focusColor;
+            border-radius: 50%;
+        }
+    }
+    &-item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+.footer-title, .sub {
+    margin-top: 72px;
+    margin-bottom: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $accentColor;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+}
+.send_btn {
+    width: 200px;
+    padding: 10px 29px;
+    background-color: $focusColor;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    transition-property: background-color;
+    @include transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: rgba(24, 140, 232, 1);
+    }
+}
+.sub-form input {
+    width: 358px;
+    padding: 18px 12px;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.submit-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}
+.caption {
+    margin: 0;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    letter-spacing: 0.03em;
+}

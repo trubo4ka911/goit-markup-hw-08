@@ -1,0 +1,55 @@
+.our-clients-title {
+    margin: 0 0 50px 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: $titleTextColor;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.our-clients {
+    padding: 94px 0;
+    text-align: center;
+    
+    &-title {
+        margin-bottom: 50px;
+    }
+}
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.client {
+    width: calc((100% - 30px) / 2);
+    height: 90px;
+    @media screen and (max-width: 1599px) {
+        margin-bottom: 30px;
+    }
+}
+.client:not(:last-child) {
+    @media screen and (min-width:$desktop) {
+    margin-right: 30px;        
+    }
+}
+.client-icon {
+    fill: currentColor;
+}
+.client-link {
+    display: block;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 20px 0;
+    text-align: center;
+    color: rgba(175, 177, 184, 1);;
+    fill: rgba(175, 177, 184, 1);
+    transition-property: color;
+    @include transition;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $focusColor;
+        color: $focusColor;
+    }
+}
