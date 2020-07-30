@@ -1,13 +1,13 @@
 .header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 9998;
-    @media screen and (min-width: $desktop) {
-        padding: 25px 0 7px;
-    }
+	width: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	border-bottom: 1px solid #ececec;
+	@media screen and (min-width: $desktop) {
+		position: fixed;
+	}
 }
 .navigation {
     display: flex;

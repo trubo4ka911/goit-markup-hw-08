@@ -148,7 +148,29 @@
             </h2>
             <ul class="activities-list">
                 <li class="activities-item">
-                    <img src="./img/decstop.jpg" width="370" alt="image" class="activities-item-image">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/portfolio/desktop-app-desktop.webp    1x,
+                                ./img/portfolio/desktop-app-desktop@2x.webp 2x,
+                                ./img/portfolio/desktop-app-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                ./img/portfolio/desktop-app-desktop.jpg    1x,
+                                ./img/portfolio/desktop-app-desktop@2x.jpg 2x,
+                                ./img/portfolio/desktop-app-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="wedoing-card__image"
+                            src="./img/portfolio/desktop-app-desktop.jpg"
+                            alt="Desktop applications"
+                        />
+                    </picture>
                    <h3 class="activities-item-title">
                         <a href="#" class="activities-item-link">
                             Десктопные приложения
@@ -156,7 +178,29 @@
                    </h3> 
                 </li>
                 <li class="activities-item">
-                    <img src="./img/mobile.jpg" width="370"  alt="image" class="activities-item-image">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/portfolio/mobile-app-desktop.webp    1x,
+                                ./img/portfolio/mobile-app-desktop@2x.webp 2x,
+                                ./img/portfolio/mobile-app-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                ./img/portfolio/mobile-app-desktop.jpg    1x,
+                                ./img/portfolio/mobile-app-desktop@2x.jpg 2x,
+                                ./img/portfolio/mobile-app-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="wedoing-card__image"
+                            src="./img/portfolio/mobile-app-desktop.jpg"
+                            alt="Mobile applications"
+                        />
+                    </picture>
                     <h3 class="activities-item-title">
                         <a href="#" class="activities-item-link">
                             Мобильные приложения
@@ -164,7 +208,29 @@
                     </h3>
                 </li>
                 <li class="activities-item">
-                    <img src="./img/design.jpg" width="370"  alt="image" class="activities-item-image">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/portfolio/design-solution-desktop.webp    1x,
+                                ./img/portfolio/design-solution-desktop@2x.webp 2x,
+                                ./img/portfolio/design-solution-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            srcset="
+                                ./img/portfolio/design-solution-desktop.jpg    1x,
+                                ./img/portfolio/design-solution-desktop@2x.jpg 2x,
+                                ./img/portfolio/design-solution-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                        />
+                        <img
+                            class="wedoing-card__image"
+                            src="./img/portfolio/design-solution-desktop.jpg"
+                            alt="Design solutions"
+                        />
+                    </picture>
                     <h3 class="activities-item-title">
                         <a href="#" class="activities-item-link">
                             Дизайнерские решения
@@ -181,7 +247,63 @@
             </h2>
             <ul class="team-list">
                 <li class="team-item">
-                    <img class="team-item-image" src="./img/john.jpg" alt="Николай Кучеренко">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/team/kurchenko-desktop.webp    1x,
+                                ./img/team/kurchenko-desktop@2x.webp 2x,
+                                ./img/team/kurchenko-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/kurchenko-desktop.jpg    1x,
+                                ./img/team/kurchenko-desktop@2x.jpg 2x,
+                                ./img/team/kurchenko-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/kurchenko-tablet.webp    1x,
+                                ./img/team/kurchenko-tablet@2x.webp 2x,
+                                ./img/team/kurchenko-tablet@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/kurchenko-tablet.jpg    1x,
+                                ./img/team/kurchenko-tablet@2x.jpg 2x,
+                                ./img/team/kurchenko-tablet@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/kurchenko-mobile.webp    1x,
+                                ./img/team/kurchenko-mobile@2x.webp 2x,
+                                ./img/team/kurchenko-mobile@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                        />
+                        <source
+                            srcset="
+                                ./imimgages/team/kurchenko-mobile.jpg    1x,
+                                ./img/team/kurchenko-mobile@2x.jpg 2x,
+                                ./img/team/kurchenko-mobile@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(max-width: 767px)"
+                        />
+                        <img class="team-card__image" src="./img/team/kurchenko-desktop.jpg" alt="Kucherenko" />
+                    </picture>
                     <h3 class="team-item-name">
                         Николай Кучеренко
                     </h3>
@@ -220,7 +342,63 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img class="team-item-image" src="./img/marta.jpg" alt="Ольга Иванова">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/team/ivanova-desktop.webp    1x,
+                                ./img/team/ivanova-desktop@2x.webp 2x,
+                                ./img/team/ivanova-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/ivanova-desktop.jpg    1x,
+                                ./img/team/ivanova-desktop@2x.jpg 2x,
+                                ./img/team/ivanova-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/ivanova-tablet.webp    1x,
+                                ./img/team/ivanova-tablet@2x.webp 2x,
+                                ./img/team/ivanova-tablet@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/ivanova-tablet.jpg    1x,
+                                ./img/team/ivanova-tablet@2x.jpg 2x,
+                                ./img/team/ivanova-tablet@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/ivanova-mobile.webp    1x,
+                                ./img/team/ivanova-mobile@2x.webp 2x,
+                                ./img/team/ivanova-mobile@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/ivanova-mobile.jpg    1x,
+                                ./img/team/ivanova-mobile@2x.jpg 2x,
+                                ./img/team/ivanova-mobile@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(max-width: 767px)"
+                        />
+                        <img class="team-card__image" src="./img/team/ivanova-desktop.jpg" alt="Ivanova" />
+                    </picture>
                     <h3 class="team-item-name">
                         Ольга Иванова
                     </h3>
@@ -259,7 +437,63 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img class="team-item-image" src="./img/robert.jpg" alt="Андрей Шевченко">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-desktop.webp    1x,
+                                ./img/team/shevchenko-desktop@2x.webp 2x,
+                                ./img/team/shevchenko-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-desktop.jpg    1x,
+                                ./img/team/shevchenko-desktop@2x.jpg 2x,
+                                ./img/team/shevchenko-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-tablet.webp    1x,
+                                ./img/team/shevchenko-tablet@2x.webp 2x,
+                                ./img/team/shevchenko-tablet@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-tablet.jpg    1x,
+                                ./img/team/shevchenko-tablet@2x.jpg 2x,
+                                ./img/team/shevchenko-tablet@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-mobile.webp    1x,
+                                ./img/team/shevchenko-mobile@2x.webp 2x,
+                                ./img/team/shevchenko-mobile@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/shevchenko-mobile.jpg    1x,
+                                ./img/team/shevchenko-mobile@2x.jpg 2x,
+                                ./img/team/shevchenko-mobile@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(max-width: 767px)"
+                        />
+                        <img class="team-card__image" src="./img/team/shevchenko-desktop.jpg" alt="Shevchenko" />
+                    </picture>
                     <h3 class="team-item-name">
                         Андрей Шевченко
                     </h3>
@@ -298,7 +532,63 @@
                     </ul>
                 </li>
                 <li class="team-item">
-                    <img class="team-item-image" src="./img/martin.jpg" alt="Иван Николаев">
+                    <picture>
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-desktop.webp    1x,
+                                ./img/team/nikolaev-desktop@2x.webp 2x,
+                                ./img/team/nikolaev-desktop@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-desktop.jpg    1x,
+                                ./img/team/nikolaev-desktop@2x.jpg 2x,
+                                ./img/team/nikolaev-desktop@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-tablet.webp    1x,
+                                ./img/team/nikolaev-tablet@2x.webp 2x,
+                                ./img/team/nikolaev-tablet@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-tablet.jpg    1x,
+                                ./img/team/nikolaev-tablet@2x.jpg 2x,
+                                ./img/team/nikolaev-tablet@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-mobile.webp    1x,
+                                ./img/team/nikolaev-mobile@2x.webp 2x,
+                                ./img/team/nikolaev-mobile@3x.webp 3x
+                            "
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                        />
+                        <source
+                            srcset="
+                                ./img/team/nikolaev-mobile.jpg    1x,
+                                ./img/team/nikolaev-mobile@2x.jpg 2x,
+                                ./img/team/nikolaev-mobile@3x.jpg 3x
+                            "
+                            type="image/jpeg"
+                            media="(max-width: 767px)"
+                        />
+                        <img class="team-card__image" src="./img/team/nikolaev-desktop.jpg" alt="Nikolaev" />
+                    </picture>
                     <h3 class="team-item-name">
                         Иван Николаев
                     </h3>
