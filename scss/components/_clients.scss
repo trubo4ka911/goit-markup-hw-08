@@ -34,16 +34,19 @@
     height: 90px;
     }
 }
-// .client:not(:last-child) {
-//     @media screen and (min-width:$desktop) {
-//     margin-right: 30px;        
-//     }
-// }
+.client:not(:last-child) {
+    @media screen and (min-width:$desktop) {
+    margin-right: 30px;        
+    }
+}
 .client-icon {
     fill: currentColor;
 }
 .client-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: center;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
